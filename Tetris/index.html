@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jogo do Tetris</title>
+  <script src="js/app.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+  <!--Puxando essa fonte de estilos-->
+</head>
+
+<body>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu"> <!--Criando o menu de dicas-->
+      <div class="menu-content">
+        <h2 class="t-ucase">Dicas</h2>
+        <p class="rules"> Use a seta <b class="key">CIMA</b> para rotacionar as peças.<br> 
+        <br>
+        <b class="key">ESQUERDA</b> e <b class="key">DIREITA</b> para movimentar as peças através do tabuleiro.<br> 
+        <br>
+        Pressione <b class="key">BAIXO</b> e a peça se deslocará para baixo com velocidade.</p>
+        <button class="close fw-400">X</button>
+      </div>
+    </div>
+  </div>
+  <header>
+    <!--Título-->
+    <h1 class="fw-300 t-ucase">JOGO <br><span class="fw-400 t-wide t-big t-ucase">Tetris</span></h1>
+  </header>
+  <main class="game-area">
+    <div class="game">
+      <div class="grid"></div>
+    </div>
+    <section>
+      <div class="display">
+        <h1 class="score fw-400 t-ucase">Sua Pontuação <br> <span class="score-display t-ucase fw-300">0</span></h1>
+        <div class="previous-shape">
+          <div class="previous-grid"></div>
+        </div>
+        <h2 class="lines-display fw-400 t-ucase">Linhas:<span class="lines-score">0</span></h2>
+      </div>
+      <button class="button t-ucase" href="#">Start / Pausa</button>
+      <small class='footer t-ucase'>Renan Silveira Sena</small>
+    </section>
+  </main>
+</body>
+
+</html>
